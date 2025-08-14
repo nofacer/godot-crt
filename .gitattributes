@@ -1,2 +1,23 @@
-# Normalize EOL for all files that Git considers text files.
+# ================================================
+# Godot Add-on .gitattributes
+# ================================================
+# 1. Force LF line endings for all text files (cross-platform consistency)
 * text=auto eol=lf
+
+# 2. Ignore Godot editor-generated cache files when exporting (git archive / Asset Library)
+*.import export-ignore
+.import/ export-ignore
+.project_metadata/ export-ignore
+.project_settings/ export-ignore
+
+# 3. Ignore source/artwork files when exporting (optional)
+*.blend export-ignore
+*.psd export-ignore
+docs/ export-ignore
+
+# 4. Ignore everything by default when exporting
+/** export-ignore
+
+# 5. Only include the addons folder (Godot Asset Library requirement)
+!/addons
+/addons/** !export-ignore

@@ -1,3 +1,38 @@
+# ================================================
+# Godot Add-on .gitignore
+# ================================================
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Godot import cache (auto-generated)
+.import/
+**/*.import
+
+# Godot project temporary/editor files
+.project_metadata/
+.project_settings/
+
+# Godot 4.x temporary debug/translation files
+*.translation
+*.translation.import
+
+# Editor-generated logs / crash dumps
+*.log
+
+# OS-specific junk files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+
+# Source/artwork files (optional — ignore if you don't want them in repo)
+*.blend
+*.psd
+*.xcf
+
+# Backup/temporary files from editors
+*~
+*.tmp
+*.bak
+*.old
