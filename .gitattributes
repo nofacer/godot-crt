@@ -19,5 +19,5 @@ docs/ export-ignore
 /** export-ignore
 
 # 5. Only include the addons folder (Godot Asset Library requirement)
-!/addons
-/addons/** !export-ignore
+!/addons/
+!/addons/**
